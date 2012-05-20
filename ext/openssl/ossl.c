@@ -509,9 +509,9 @@ ossl_debug_set(VALUE self, VALUE val)
  *
  * Use the opposite key type do decrypt the document
  *
- *   top_secret = key.public_decrypt public_encrypted
+ *   top_secret = key.private_decrypt public_encrypted
  *
- *   public_release = key.private_decrypt private_encrypted
+ *   public_release = key.public_decrypt private_encrypted
  *
  * == PKCS #5 Password-based Encryption
  *
